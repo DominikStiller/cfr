@@ -106,7 +106,7 @@ def get_ptype(archive_type, proxy_type):
         ('hybrid', 'hybrid'): 'hybrid',
         ('hybrid', 'multiproxy'): 'hybrid',
         ('bivalve', 'd18O'): 'bivalve.d18O',
-        ('molluskshell', 'd18O'): 'bivalve.d18O',
+        ('mollusk shell', 'd18O'): 'bivalve.d18O',
         ('documents', 'Documentary'): 'documents',
         ('documents', 'historical'): 'documents',
         ('peat', 'pollen'): 'peat.pollen',
