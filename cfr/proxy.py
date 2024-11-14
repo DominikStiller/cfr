@@ -46,9 +46,9 @@ def get_ptype(archive_type, proxy_type):
 
     '''
     ptype_dict = {
-        ('tree', 'delta Density'): 'tree.MXD',
-        ('tree', 'MXD'): 'tree.MXD',
-        ('tree', 'TRW'): 'tree.TRW',
+        ('tree', 'delta Density'): 'wood.maximumlatewooddensity',
+        ('tree', 'MXD'): 'wood.maximumlatewooddensity',
+        ('tree', 'TRW'): 'wood.ringwidth',
         ('tree', 'ENSO'): 'tree.ENSO',
         ('coral', 'Sr/Ca'): 'coral.SrCa',
         ('coral', 'SrCa_annual'): 'coral.SrCa',
@@ -100,6 +100,7 @@ def get_ptype(archive_type, proxy_type):
         ('lake sediment', 'd18O'): 'lake.d18O',
         ('borehole', 'borehole'): 'borehole',
         ('hybrid', 'hybrid'): 'hybrid',
+        ('hybrid', 'multiproxy'): 'hybrid',
         ('bivalve', 'd18O'): 'bivalve.d18O',
         ('documents', 'Documentary'): 'documents',
         ('documents', 'historical'): 'documents',
@@ -149,8 +150,8 @@ class ProxyRecord:
             ptype (str): the label of proxy type according to archive and proxy information;
                 some examples:
 
-                * 'tree.trw' : tree-ring width (TRW)
-                * 'tree.mxd' : maximum latewood density (MXD)
+                * 'wood.ringwidth' : tree-ring width (TRW)
+                * 'wood.maximumlatewooddensity' : maximum latewood density (MXD)
                 * 'coral.d18O' : Coral d18O isotopes
                 * 'coral.SrCa' : Coral Sr/Ca ratios
                 * 'ice.d18O' : Ice core d18O isotopes
